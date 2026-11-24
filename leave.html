@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Leave Request - SHMS</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <i class="fa-solid fa-bed"></i>
+            <span>SHMS</span>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="dashboard.html" class="menu-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="profile.html" class="menu-item">
+                <i class="fa-solid fa-user"></i>
+                <span>My Profile</span>
+            </a>
+
+            <a href="room.html" class="menu-item">
+                <i class="fa-solid fa-door-open"></i>
+                <span>Room Details</span>
+            </a>
+
+            <a href="leave.html" class="menu-item active">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Leave Request</span>
+            </a>
+
+            <a href="complaints.html" class="menu-item">
+                <i class="fa-solid fa-wrench"></i>
+                <span>Complaints</span>
+            </a>
+
+            <a href="fees.html" class="menu-item">
+                <i class="fa-solid fa-wallet"></i>
+                <span>Fee Details</span>
+            </a>
+
+            <a href="mess.html" class="menu-item">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Mess Menu</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="settings.html" class="menu-item">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+            <a href="index.html" class="menu-item">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="top-header">
+            <h1>Leave Request</h1>
+
+            <div class="header-right">
+
+                <div class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                    <span></span>
+                </div>
+
+                <div class="student-profile">
+
+                    <div class="profile-image">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="profile-text">
+                        <strong>Rituj Kumar</strong>
+                        <small>Student</small>
+                    </div>
+
+                </div>
+
+            </div>
+        </header>
+
+
+        <section class="content">
+
+            <div class="page-heading">
+                <h2>Apply for Leave</h2>
+                <p>Submit a request to leave the hostel.</p>
+            </div>
+
+
+            <div class="form-card">
+
+                <form id="leaveForm">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label>Leave From</label>
+                            <input type="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Leave To</label>
+                            <input type="date" required>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Reason</label>
+
+                        <select required>
+
+                            <option value="">
+                                Select reason
+                            </option>
+
+                            <option>
+                                Home Visit
+                            </option>
+
+                            <option>
+                                Medical
+                            </option>
+
+                            <option>
+                                Personal Work
+                            </option>
+
+                            <option>
+                                Family Function
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Additional Information</label>
+
+                        <textarea
+                            placeholder="Enter additional details..."
+                            rows="5">
+                        </textarea>
+
+                    </div>
+
+
+                    <button class="primary-btn" type="submit">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Submit Request
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <div class="page-card">
+
+                <h2>Previous Requests</h2>
+
+                <div class="table">
+
+                    <div class="table-row table-head">
+                        <span>From</span>
+                        <span>To</span>
+                        <span>Reason</span>
+                        <span>Status</span>
+                    </div>
+
+                    <div class="table-row">
+                        <span>10 Nov 2026</span>
+                        <span>12 Nov 2026</span>
+                        <span>Home Visit</span>
+                        <span class="status approved">Approved</span>
+                    </div>
+
+                    <div class="table-row">
+                        <span>02 Nov 2026</span>
+                        <span>03 Nov 2026</span>
+                        <span>Personal</span>
+                        <span class="status pending">Pending</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script>
+document.getElementById("leaveForm").addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    alert("Leave request submitted successfully!");
+
+    this.reset();
+
+});
+</script>
+
+</body>
+</html>

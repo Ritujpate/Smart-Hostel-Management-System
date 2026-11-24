@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard - SHMS</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <i class="fa-solid fa-bed"></i>
+            <span>SHMS</span>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <!-- DASHBOARD -->
+            <a href="dashboard.html" class="menu-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <!-- PROFILE -->
+            <a href="profile.html" class="menu-item">
+                <i class="fa-solid fa-user"></i>
+                <span>My Profile</span>
+            </a>
+
+            <!-- ROOM -->
+            <a href="room.html" class="menu-item">
+                <i class="fa-solid fa-door-open"></i>
+                <span>Room Details</span>
+            </a>
+
+            <!-- LEAVE -->
+            <a href="leave.html" class="menu-item">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Leave Request</span>
+            </a>
+
+            <!-- COMPLAINTS -->
+            <a href="complaints.html" class="menu-item">
+                <i class="fa-solid fa-wrench"></i>
+                <span>Complaints</span>
+            </a>
+
+            <!-- FEES -->
+            <a href="fees.html" class="menu-item">
+                <i class="fa-solid fa-wallet"></i>
+                <span>Fee Details</span>
+            </a>
+
+            <!-- MESS -->
+            <a href="mess.html" class="menu-item">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Mess Menu</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <!-- SETTINGS -->
+            <a href="settings.html" class="menu-item">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+            <!-- LOGOUT -->
+            <a href="index.html" class="menu-item logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+        <!-- TOP HEADER -->
+
+        <header class="top-header">
+
+            <h1>Student Dashboard</h1>
+
+            <div class="header-right">
+
+                <div class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                    <span></span>
+                </div>
+
+                <!-- PROFILE -->
+                <a href="profile.html" class="student-profile">
+
+                    <div class="profile-image">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="profile-text">
+                        <strong>Rituj Kumar</strong>
+                        <small>Student</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="content">
+
+
+            <!-- WELCOME CARD -->
+
+            <div class="welcome-card">
+
+                <div class="welcome-text">
+
+                    <h2>
+                        Welcome, Rituj Kumar
+                        <span>👋</span>
+                    </h2>
+
+                    <p>B.Tech (CSIT) – 3rd Year</p>
+
+                </div>
+
+                <div class="welcome-icon">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+
+            </div>
+
+
+            <!-- ================= INFO CARDS ================= -->
+
+            <div class="info-cards">
+
+
+                <!-- ROOM -->
+
+                <a href="room.html" class="info-card">
+
+                    <div class="info-icon blue">
+                        <i class="fa-solid fa-bed"></i>
+                    </div>
+
+                    <div>
+                        <span>Room</span>
+                        <h3>B-204</h3>
+                    </div>
+
+                </a>
+
+
+                <!-- HOSTEL -->
+
+                <a href="room.html" class="info-card">
+
+                    <div class="info-icon purple">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <div>
+                        <span>Hostel</span>
+                        <h3>Boys Hostel - B</h3>
+                    </div>
+
+                </a>
+
+
+                <!-- BED -->
+
+                <a href="room.html" class="info-card">
+
+                    <div class="info-icon blue">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div>
+                        <span>Bed</span>
+                        <h3>2 / 4</h3>
+                    </div>
+
+                </a>
+
+
+                <!-- FEES -->
+
+                <a href="fees.html" class="info-card">
+
+                    <div class="info-icon green">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+
+                    <div>
+                        <span>Fees</span>
+                        <h3>₹42,000</h3>
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- ================= LOWER SECTION ================= -->
+
+            <div class="dashboard-grid">
+
+
+                <!-- MY REQUESTS -->
+
+                <div class="dashboard-card">
+
+                    <div class="card-header">
+
+                        <h2>My Requests</h2>
+
+                        <a href="complaints.html">View All</a>
+
+                    </div>
+
+
+                    <!-- COMPLAINT -->
+
+                    <a href="complaints.html" class="request">
+
+                        <div class="request-icon purple-icon">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+
+                        <div class="request-info">
+
+                            <h3>Complaint</h3>
+
+                            <p>Fan not working</p>
+
+                        </div>
+
+                        <span class="status progress">
+                            In Progress
+                        </span>
+
+                    </a>
+
+
+                    <!-- LEAVE REQUEST -->
+
+                    <a href="leave.html" class="request">
+
+                        <div class="request-icon blue-icon">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+
+                        <div class="request-info">
+
+                            <h3>Leave Request</h3>
+
+                            <p>Leave for home</p>
+
+                        </div>
+
+                        <span class="status approved">
+                            Approved
+                        </span>
+
+                    </a>
+
+
+                    <!-- SECOND COMPLAINT -->
+
+                    <a href="complaints.html" class="request">
+
+                        <div class="request-icon orange-icon">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+
+                        <div class="request-info">
+
+                            <h3>Complaint</h3>
+
+                            <p>Water tap leakage</p>
+
+                        </div>
+
+                        <span class="status pending">
+                            Pending
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- LATEST NOTICES -->
+
+                <div class="dashboard-card">
+
+                    <div class="card-header">
+
+                        <h2>Latest Notices</h2>
+
+                        <a href="notices.html">View All</a>
+
+                    </div>
+
+
+                    <!-- NOTICE 1 -->
+
+                    <a href="notices.html" class="notice">
+
+                        <div class="notice-icon red-icon">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>Hostel Inspection</h3>
+
+                            <p>24 Nov, 10:00 AM</p>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- NOTICE 2 -->
+
+                    <a href="notices.html" class="notice">
+
+                        <div class="notice-icon blue-icon">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>Mess Timing Updated</h3>
+
+                            <p>Effective from 25 Nov</p>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- NOTICE 3 -->
+
+                    <a href="notices.html" class="notice">
+
+                        <div class="notice-icon green-icon">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>Hostel Fee Reminder</h3>
+
+                            <p>Last date: 30 Nov</p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

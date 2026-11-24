@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Hostel Management System</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+    <!-- =====================================================
+                         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <!-- LOGO -->
+        <div class="logo">
+            <i class="fa-solid fa-bed"></i>
+            <span>Hostels</span>
+        </div>
+
+        <div class="nav-divider"></div>
+
+        <!-- NAVIGATION -->
+        <nav class="nav-links">
+
+            <a href="#home" class="nav-link active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="learn-more.html" class="nav-link">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Learn More</span>
+            </a>
+
+            <a href="contact.html" class="nav-link">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+
+            <a href="login.html" class="nav-link">
+                <i class="fa-regular fa-user"></i>
+                <span>Login</span>
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+                           MAIN
+    ====================================================== -->
+
+    <main>
+
+        <!-- =================================================
+                         HERO SECTION
+        ================================================== -->
+
+        <section class="hero" id="home">
+
+            <!-- HOSTEL IMAGE -->
+            <img
+                src="hostel.png"
+                class="hero-image"
+                alt="Hostel Building"
+            >
+
+            <!-- DARK OVERLAY -->
+            <div class="hero-overlay"></div>
+
+
+            <!-- HERO CONTENT -->
+            <div class="hero-content">
+
+                <div class="small-line"></div>
+
+                <h1>
+                    Smart<br>
+                    Hostel <span>Management</span><br>
+                    System
+                </h1>
+
+                <div class="title-line"></div>
+
+                <p>
+                    A centralized and smart platform to manage hostel
+                    allocation, student records, complaints, leave
+                    requests, fees, and daily hostel operations
+                    efficiently.
+                </p>
+
+
+                <!-- =================================================
+                              HERO BUTTONS
+                ================================================== -->
+
+                <div class="hero-buttons">
+
+                    <!-- GET STARTED -->
+                    <button
+                        class="get-started"
+                        id="getStarted"
+                        type="button"
+                    >
+                        <span>Get Started</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+
+                    <!-- LEARN MORE -->
+                    <button
+                        class="learn-more"
+                        id="learnMore"
+                        type="button"
+                    >
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- LEFT ARROW -->
+            <button
+                class="slider-button previous"
+                type="button"
+                aria-label="Previous slide"
+            >
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+
+            <!-- RIGHT ARROW -->
+            <button
+                class="slider-button next"
+                type="button"
+                aria-label="Next slide"
+            >
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+
+            <!-- SLIDER DOTS -->
+            <div class="slider-dots">
+                <span class="dot"></span>
+                <span class="dot active-dot"></span>
+                <span class="dot"></span>
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+                           FOOTER
+        ================================================== -->
+
+        <footer class="shms-footer">
+
+            <div class="back-to-top">
+                <a href="#top">
+                    <i class="fa-solid fa-chevron-up"></i>
+                    Back to top
+                </a>
+            </div>
+
+
+            <div class="footer-main">
+
+                <!-- COLUMN 1 -->
+                <div class="footer-column">
+
+                    <h3>About SHMS</h3>
+
+                    <p>
+                        Smart Hostel Management System provides
+                        a centralized platform for managing hostel
+                        activities efficiently.
+                    </p>
+
+                    <a href="learn-more.html">
+                        About Smart Hostel
+                    </a>
+
+                    <a href="learn-more.html">
+                        How SHMS Works
+                    </a>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                </div>
+
+
+                <!-- COLUMN 2 -->
+                <div class="footer-column">
+
+                    <h3>Hostel Information</h3>
+
+                    <a href="learn-more.html">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Hostel Guidelines
+                    </a>
+
+                    <a href="learn-more.html">
+                        <i class="fa-solid fa-gears"></i>
+                        How SHMS Works
+                    </a>
+
+                    <a href="mess.html">
+                        <i class="fa-solid fa-utensils"></i>
+                        Mess Information
+                    </a>
+
+                    <a href="notices.html">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        Hostel Notices
+                    </a>
+
+                </div>
+
+
+                <!-- COLUMN 3 -->
+                <div class="footer-column">
+
+                    <h3>Student Access</h3>
+
+                    <a href="login.html">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Student Login
+                    </a>
+
+                    <a href="profile.html">
+                        <i class="fa-solid fa-user"></i>
+                        My Profile
+                    </a>
+
+                    <a href="room.html">
+                        <i class="fa-solid fa-bed"></i>
+                        Hostel Details
+                    </a>
+
+                    <a href="fees.html">
+                        <i class="fa-solid fa-money-bill"></i>
+                        Fee Details
+                    </a>
+
+                    <a href="leave.html">
+                        <i class="fa-solid fa-calendar"></i>
+                        Leave Request
+                    </a>
+
+                </div>
+
+
+                <!-- COLUMN 4 -->
+                <div class="footer-column">
+
+                    <h3>Contact Us</h3>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Hostel Campus
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 XXXXX XXXXX
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        hostel@example.com
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-clock"></i>
+                        Mon - Sat: 9:00 AM - 5:00 PM
+                    </p>
+
+
+                    <div class="footer-social">
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOTER BOTTOM -->
+            <div class="footer-bottom">
+
+                <div class="footer-brand">
+
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-bed"></i>
+                    </div>
+
+                    <div class="footer-brand-text">
+                        <strong>Hostels</strong>
+                        <span>Smart Hostel Management</span>
+                    </div>
+
+                </div>
+
+
+                <div class="footer-options">
+
+                    <button class="footer-option" type="button">
+                        <i class="fa-solid fa-globe"></i>
+                        English
+                        <i class="fa-solid fa-sort"></i>
+                    </button>
+
+                    <button class="footer-option" type="button">
+                        <span class="india-flag">🇮🇳</span>
+                        India
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-copyright">
+                © 2026 Smart Hostel Management System.
+                All Rights Reserved.
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <!-- =====================================================
+                         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        // GET STARTED → LOGIN
+        document
+            .getElementById("getStarted")
+            .addEventListener("click", function () {
+
+                window.location.href = "login.html";
+
+            });
+
+
+        // LEARN MORE → LEARN MORE PAGE
+        document
+            .getElementById("learnMore")
+            .addEventListener("click", function () {
+
+                window.location.href = "learn-more.html";
+
+            });
+
+    </script>
+
+</body>
+</html>

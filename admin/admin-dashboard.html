@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Admin Dashboard - SHMS Admin</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="admin.css"></head>
+<body><div class="layout"><aside class="sidebar">
+<div class="logo"><i class="fa-solid fa-bed"></i><span>SHMS</span></div><nav class="menu"><a class="menu-item active" href="admin-dashboard.html"><i class="fa-solid fa-house"></i>Dashboard</a><a class="menu-item" href="admin-students.html"><i class="fa-solid fa-users"></i>Students</a><a class="menu-item" href="admin-rooms.html"><i class="fa-solid fa-bed"></i>Rooms</a><a class="menu-item" href="admin-complaints.html"><i class="fa-solid fa-wrench"></i>Complaints</a><a class="menu-item" href="admin-leave.html"><i class="fa-solid fa-calendar-check"></i>Leave Requests</a><a class="menu-item" href="admin-visitors.html"><i class="fa-solid fa-id-card"></i>Visitors</a><a class="menu-item" href="admin-notices.html"><i class="fa-solid fa-bullhorn"></i>Notices</a><a class="menu-item" href="admin-reports.html"><i class="fa-solid fa-chart-column"></i>Reports</a></nav>
+<div class="sidebar-bottom"><a class="menu-item " href="admin-settings.html"><i class="fa-solid fa-gear"></i>Settings</a>
+<a class="menu-item logout" href="index.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></div></aside>
+<main class="main"><header class="topbar"><h1>Admin Dashboard</h1><div class="top-actions">
+<a class="bell" href="admin-notices.html"><i class="fa-regular fa-bell"></i><span></span></a>
+<a class="profile" href="admin-settings.html"><div class="avatar"><i class="fa-solid fa-user-tie"></i></div><div class="profile-text"><strong>Admin</strong><small>Administrator</small></div><i class="fa-solid fa-chevron-down"></i></a>
+</div></header><section class="content">
+<div class="stats">
+<a class="stat" href="admin-students.html"><div class="stat-icon purple"><i class="fa-solid fa-users"></i></div><div><span>Students</span><h2>482</h2></div></a>
+<a class="stat" href="admin-rooms.html"><div class="stat-icon blue"><i class="fa-solid fa-bed"></i></div><div><span>Rooms</span><h2>125</h2></div></a>
+<a class="stat" href="admin-rooms.html"><div class="stat-icon purple"><i class="fa-solid fa-chart-pie"></i></div><div><span>Occupancy</span><h2>91.2%</h2></div></a>
+<a class="stat" href="admin-complaints.html"><div class="stat-icon red"><i class="fa-solid fa-triangle-exclamation"></i></div><div><span>Pending Complaints</span><h2>18</h2></div></a>
+</div>
+<div class="grid-2">
+<div class="card"><div class="card-header"><h2>Occupancy Overview</h2><a href="admin-rooms.html">View Rooms</a></div>
+<div class="donut-wrap"><div style="position:relative"><div class="donut"></div><div class="donut-text">91.2%</div></div><div class="legend"><div><span class="dot p"></span>Occupied (570)</div><div><span class="dot b"></span>Available (55)</div></div></div></div>
+<div class="card"><div class="card-header"><h2>Complaints by Category</h2><a href="admin-complaints.html">See All</a></div>
+<div class="hbar"><div class="hrow"><b>Electrical</b><div class="track"><div class="fill" style="width:100%"></div></div><b>24</b></div><div class="hrow"><b>Plumbing</b><div class="track"><div class="fill" style="width:75%"></div></div><b>18</b></div><div class="hrow"><b>Network</b><div class="track"><div class="fill" style="width:50%"></div></div><b>12</b></div><div class="hrow"><b>Cleaning</b><div class="track"><div class="fill" style="width:33%"></div></div><b>8</b></div></div></div>
+</div>
+<div class="grid-2">
+<div class="card"><div class="card-header"><h2>Complaint Trend (Last 7 Days)</h2><a href="admin-reports.html">Full Report</a></div>
+<div class="chart"><div class="bar" style="height:30%"><small>14 Nov</small></div><div class="bar" style="height:55%"><small>15 Nov</small></div><div class="bar" style="height:55%"><small>16 Nov</small></div><div class="bar" style="height:75%"><small>17 Nov</small></div><div class="bar" style="height:55%"><small>18 Nov</small></div><div class="bar" style="height:65%"><small>19 Nov</small></div><div class="bar" style="height:85%"><small>20 Nov</small></div></div></div>
+<div class="card"><div class="card-header"><h2>Quick Actions</h2></div><div class="quick-actions">
+<a class="quick" href="admin-students.html"><i class="fa-solid fa-user-plus"></i> Add Student</a>
+<a class="quick" href="admin-rooms.html"><i class="fa-solid fa-bed"></i> Manage Rooms</a>
+<a class="quick" href="admin-notices.html"><i class="fa-solid fa-square-plus"></i> Create Notice</a>
+<a class="quick" href="admin-reports.html"><i class="fa-solid fa-chart-line"></i> View Reports</a>
+</div></div>
+</div>
+<div class="card"><div class="card-header"><h2>Recent Activity</h2><a href="admin-reports.html">View Reports</a></div>
+<div class="table-wrap"><table><thead><tr><th>Time</th><th>Activity</th><th>User</th><th>Status</th></tr></thead><tbody>
+<tr><td>10:35 AM</td><td>New complaint registered</td><td>Rituj Kumar</td><td><span class="status pending">Pending</span></td></tr>
+<tr><td>10:12 AM</td><td>Leave request approved</td><td>Arjun Singh</td><td><span class="status approved">Approved</span></td></tr>
+<tr><td>09:45 AM</td><td>New notice published</td><td>Admin</td><td><span class="status approved">Completed</span></td></tr>
+</tbody></table></div></div>
+</section></main></div><script src="admin.js"></script></body></html>

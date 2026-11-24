@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Students - SHMS Admin</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="admin.css"></head>
+<body><div class="layout"><aside class="sidebar">
+<div class="logo"><i class="fa-solid fa-bed"></i><span>SHMS</span></div><nav class="menu"><a class="menu-item" href="admin-dashboard.html"><i class="fa-solid fa-house"></i>Dashboard</a><a class="menu-item active" href="admin-students.html"><i class="fa-solid fa-users"></i>Students</a><a class="menu-item" href="admin-rooms.html"><i class="fa-solid fa-bed"></i>Rooms</a><a class="menu-item" href="admin-complaints.html"><i class="fa-solid fa-wrench"></i>Complaints</a><a class="menu-item" href="admin-leave.html"><i class="fa-solid fa-calendar-check"></i>Leave Requests</a><a class="menu-item" href="admin-visitors.html"><i class="fa-solid fa-id-card"></i>Visitors</a><a class="menu-item" href="admin-notices.html"><i class="fa-solid fa-bullhorn"></i>Notices</a><a class="menu-item" href="admin-reports.html"><i class="fa-solid fa-chart-column"></i>Reports</a></nav>
+<div class="sidebar-bottom"><a class="menu-item " href="admin-settings.html"><i class="fa-solid fa-gear"></i>Settings</a>
+<a class="menu-item logout" href="index.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></div></aside>
+<main class="main"><header class="topbar"><h1>Students</h1><div class="top-actions">
+<a class="bell" href="admin-notices.html"><i class="fa-regular fa-bell"></i><span></span></a>
+<a class="profile" href="admin-settings.html"><div class="avatar"><i class="fa-solid fa-user-tie"></i></div><div class="profile-text"><strong>Admin</strong><small>Administrator</small></div><i class="fa-solid fa-chevron-down"></i></a>
+</div></header><section class="content">
+<div class="card"><div class="card-header"><h2>Student Management</h2><button class="primary" data-demo="Add Student form can be connected to your backend.">+ Add Student</button></div>
+<div class="toolbar"><div class="search"><i class="fa-solid fa-magnifying-glass"></i><input id="studentSearch" placeholder="Search by name, ID or room..."></div><select><option>All Hostels</option><option>Boys Hostel - A</option><option>Boys Hostel - B</option></select><select><option>All Years</option><option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option></select></div>
+<div class="table-wrap"><table id="studentsTable"><thead><tr><th>Student ID</th><th>Name</th><th>Room</th><th>Course</th><th>Year</th><th>Fees</th><th>Status</th></tr></thead><tbody>
+<tr><td>SHMS2026-001</td><td>Rituj Kumar</td><td>B-204</td><td>B.Tech CSIT</td><td>3rd</td><td>₹42,000</td><td><span class="status approved">Active</span></td></tr>
+<tr><td>SHMS2026-002</td><td>Arjun Singh</td><td>A-103</td><td>B.Tech CSE</td><td>2nd</td><td>₹42,000</td><td><span class="status approved">Active</span></td></tr>
+<tr><td>SHMS2026-003</td><td>Rahul Verma</td><td>B-118</td><td>B.Tech IT</td><td>3rd</td><td>₹40,000</td><td><span class="status pending">Fee Due</span></td></tr>
+<tr><td>SHMS2026-004</td><td>Aditya Sharma</td><td>A-212</td><td>B.Tech CS</td><td>1st</td><td>₹42,000</td><td><span class="status approved">Active</span></td></tr>
+</tbody></table></div></div>
+</section></main></div><script src="admin.js"></script></body></html>

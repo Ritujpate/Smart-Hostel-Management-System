@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Visitors - SHMS Admin</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="admin.css"></head>
+<body><div class="layout"><aside class="sidebar">
+<div class="logo"><i class="fa-solid fa-bed"></i><span>SHMS</span></div><nav class="menu"><a class="menu-item" href="admin-dashboard.html"><i class="fa-solid fa-house"></i>Dashboard</a><a class="menu-item" href="admin-students.html"><i class="fa-solid fa-users"></i>Students</a><a class="menu-item" href="admin-rooms.html"><i class="fa-solid fa-bed"></i>Rooms</a><a class="menu-item" href="admin-complaints.html"><i class="fa-solid fa-wrench"></i>Complaints</a><a class="menu-item" href="admin-leave.html"><i class="fa-solid fa-calendar-check"></i>Leave Requests</a><a class="menu-item active" href="admin-visitors.html"><i class="fa-solid fa-id-card"></i>Visitors</a><a class="menu-item" href="admin-notices.html"><i class="fa-solid fa-bullhorn"></i>Notices</a><a class="menu-item" href="admin-reports.html"><i class="fa-solid fa-chart-column"></i>Reports</a></nav>
+<div class="sidebar-bottom"><a class="menu-item " href="admin-settings.html"><i class="fa-solid fa-gear"></i>Settings</a>
+<a class="menu-item logout" href="index.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></div></aside>
+<main class="main"><header class="topbar"><h1>Visitors</h1><div class="top-actions">
+<a class="bell" href="admin-notices.html"><i class="fa-regular fa-bell"></i><span></span></a>
+<a class="profile" href="admin-settings.html"><div class="avatar"><i class="fa-solid fa-user-tie"></i></div><div class="profile-text"><strong>Admin</strong><small>Administrator</small></div><i class="fa-solid fa-chevron-down"></i></a>
+</div></header><section class="content">
+<div class="card"><div class="card-header"><h2>Visitor Management</h2><button class="primary" data-demo="Add Visitor form can be connected to your backend.">+ Add Visitor</button></div>
+<div class="toolbar"><div class="search"><i class="fa-solid fa-magnifying-glass"></i><input placeholder="Search visitor or student..."></div><select><option>Today's Visitors</option><option>All Visitors</option></select></div>
+<div class="table-wrap"><table><thead><tr><th>Visitor</th><th>Student</th><th>Room</th><th>Relation</th><th>Check In</th><th>Check Out</th><th>Status</th></tr></thead><tbody>
+<tr><td>Amit Kumar</td><td>Rituj Kumar</td><td>B-204</td><td>Brother</td><td>09:40 AM</td><td>—</td><td><span class="status approved">Inside</span></td></tr>
+<tr><td>Neha Singh</td><td>Arjun Singh</td><td>A-103</td><td>Sister</td><td>10:15 AM</td><td>12:05 PM</td><td><span class="status approved">Checked Out</span></td></tr>
+<tr><td>Raj Verma</td><td>Rahul Verma</td><td>B-118</td><td>Father</td><td>01:20 PM</td><td>—</td><td><span class="status approved">Inside</span></td></tr>
+</tbody></table></div></div>
+</section></main></div><script src="admin.js"></script></body></html>

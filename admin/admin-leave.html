@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Leave Requests - SHMS Admin</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="admin.css"></head>
+<body><div class="layout"><aside class="sidebar">
+<div class="logo"><i class="fa-solid fa-bed"></i><span>SHMS</span></div><nav class="menu"><a class="menu-item" href="admin-dashboard.html"><i class="fa-solid fa-house"></i>Dashboard</a><a class="menu-item" href="admin-students.html"><i class="fa-solid fa-users"></i>Students</a><a class="menu-item" href="admin-rooms.html"><i class="fa-solid fa-bed"></i>Rooms</a><a class="menu-item" href="admin-complaints.html"><i class="fa-solid fa-wrench"></i>Complaints</a><a class="menu-item active" href="admin-leave.html"><i class="fa-solid fa-calendar-check"></i>Leave Requests</a><a class="menu-item" href="admin-visitors.html"><i class="fa-solid fa-id-card"></i>Visitors</a><a class="menu-item" href="admin-notices.html"><i class="fa-solid fa-bullhorn"></i>Notices</a><a class="menu-item" href="admin-reports.html"><i class="fa-solid fa-chart-column"></i>Reports</a></nav>
+<div class="sidebar-bottom"><a class="menu-item " href="admin-settings.html"><i class="fa-solid fa-gear"></i>Settings</a>
+<a class="menu-item logout" href="index.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></div></aside>
+<main class="main"><header class="topbar"><h1>Leave Requests</h1><div class="top-actions">
+<a class="bell" href="admin-notices.html"><i class="fa-regular fa-bell"></i><span></span></a>
+<a class="profile" href="admin-settings.html"><div class="avatar"><i class="fa-solid fa-user-tie"></i></div><div class="profile-text"><strong>Admin</strong><small>Administrator</small></div><i class="fa-solid fa-chevron-down"></i></a>
+</div></header><section class="content">
+<div class="card"><div class="card-header"><h2>Leave Management</h2></div><div class="toolbar"><div class="search"><i class="fa-solid fa-magnifying-glass"></i><input id="leaveSearch" placeholder="Search student or reason..."></div><select><option>All Status</option><option>Pending</option><option>Approved</option><option>Rejected</option></select></div>
+<div class="table-wrap"><table id="leaveTable"><thead><tr><th>ID</th><th>Student</th><th>Room</th><th>From</th><th>To</th><th>Reason</th><th>Status</th><th>Action</th></tr></thead><tbody>
+<tr><td>L006</td><td>Rituj Kumar</td><td>B-204</td><td>25 Nov</td><td>28 Nov</td><td>Home visit</td><td><span class="status pending">Pending</span></td><td><button class="action-btn" data-demo="Leave L006 approved (demo).">Approve</button><button class="action-btn" data-demo="Leave L006 rejected (demo).">Reject</button></td></tr>
+<tr><td>L005</td><td>Arjun Singh</td><td>A-103</td><td>26 Nov</td><td>27 Nov</td><td>Family function</td><td><span class="status approved">Approved</span></td><td><button class="action-btn" data-demo="Leave L005 opened.">View</button></td></tr>
+<tr><td>L004</td><td>Rahul Verma</td><td>B-118</td><td>23 Nov</td><td>24 Nov</td><td>Personal</td><td><span class="status rejected">Rejected</span></td><td><button class="action-btn" data-demo="Leave L004 opened.">View</button></td></tr>
+</tbody></table></div></div>
+</section></main></div><script src="admin.js"></script></body></html>

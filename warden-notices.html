@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Notices - Warden | SHMS</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="warden.css"></head>
+<body><div class="warden-layout"><aside class="sidebar"><div class="logo"><i class="fa-solid fa-bed"></i><span>SHMS</span></div><nav class="menu">
+<a class="menu-item" href="warden-dashboard.html"><i class="fa-solid fa-house"></i>Dashboard</a><a class="menu-item" href="warden-students.html"><i class="fa-solid fa-users"></i>Students</a><a class="menu-item" href="warden-complaints.html"><i class="fa-solid fa-wrench"></i>Complaints</a><a class="menu-item" href="warden-leave.html"><i class="fa-solid fa-calendar-check"></i>Leave Requests</a><a class="menu-item" href="warden-visitors.html"><i class="fa-solid fa-id-card"></i>Visitors</a><a class="menu-item active" href="warden-notices.html"><i class="fa-solid fa-bullhorn"></i>Notices</a></nav><div class="sidebar-bottom"><a class="menu-item" href="warden-settings.html"><i class="fa-solid fa-gear"></i>Settings</a><a class="menu-item logout" href="index.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></div></aside>
+<main class="main"><header class="topbar"><h1>Notices</h1><div class="top-actions"><a class="bell" href="warden-notices.html"><i class="fa-regular fa-bell"></i><span></span></a><a class="profile" href="warden-settings.html"><div class="avatar"><i class="fa-solid fa-user"></i></div><div class="profile-text"><strong>Warden</strong><small>Administrator</small></div></a></div></header>
+<section class="content"><div class="grid-2"><div class="card"><div class="card-header"><h2>Publish Notice</h2></div><form id="noticeForm">
+<div class="form-group"><label>Notice Title</label><input required placeholder="Enter notice title"></div>
+<div class="form-group"><label>Audience</label><select><option>All Students</option><option>Boys Hostel - A</option><option>Boys Hostel - B</option></select></div>
+<div class="form-group"><label>Notice</label><textarea required placeholder="Write your notice..."></textarea></div>
+<button class="primary" type="submit">Publish Notice</button></form></div>
+<div class="card"><div class="card-header"><h2>Recent Notices</h2></div><div class="notice-list">
+<div class="notice"><div class="notice-icon"><i class="fa-solid fa-bullhorn"></i></div><div><h3>Hostel Inspection</h3><p>Inspection will be held on 24 Nov at 10:00 AM.</p><small>23 Nov 2026</small></div></div>
+<div class="notice"><div class="notice-icon"><i class="fa-solid fa-utensils"></i></div><div><h3>Mess Timing Updated</h3><p>New mess timings are effective from 25 Nov.</p><small>22 Nov 2026</small></div></div>
+<div class="notice"><div class="notice-icon"><i class="fa-solid fa-wallet"></i></div><div><h3>Hostel Fee Reminder</h3><p>Students are reminded to complete fee payment by 30 Nov.</p><small>20 Nov 2026</small></div></div>
+</div></div></div></section></main></div><script src="warden.js"></script></body></html>

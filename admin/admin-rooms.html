@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Rooms - SHMS Admin</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="admin.css"></head>
+<body><div class="layout"><aside class="sidebar">
+<div class="logo"><i class="fa-solid fa-bed"></i><span>SHMS</span></div><nav class="menu"><a class="menu-item" href="admin-dashboard.html"><i class="fa-solid fa-house"></i>Dashboard</a><a class="menu-item" href="admin-students.html"><i class="fa-solid fa-users"></i>Students</a><a class="menu-item active" href="admin-rooms.html"><i class="fa-solid fa-bed"></i>Rooms</a><a class="menu-item" href="admin-complaints.html"><i class="fa-solid fa-wrench"></i>Complaints</a><a class="menu-item" href="admin-leave.html"><i class="fa-solid fa-calendar-check"></i>Leave Requests</a><a class="menu-item" href="admin-visitors.html"><i class="fa-solid fa-id-card"></i>Visitors</a><a class="menu-item" href="admin-notices.html"><i class="fa-solid fa-bullhorn"></i>Notices</a><a class="menu-item" href="admin-reports.html"><i class="fa-solid fa-chart-column"></i>Reports</a></nav>
+<div class="sidebar-bottom"><a class="menu-item " href="admin-settings.html"><i class="fa-solid fa-gear"></i>Settings</a>
+<a class="menu-item logout" href="index.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></div></aside>
+<main class="main"><header class="topbar"><h1>Rooms</h1><div class="top-actions">
+<a class="bell" href="admin-notices.html"><i class="fa-regular fa-bell"></i><span></span></a>
+<a class="profile" href="admin-settings.html"><div class="avatar"><i class="fa-solid fa-user-tie"></i></div><div class="profile-text"><strong>Admin</strong><small>Administrator</small></div><i class="fa-solid fa-chevron-down"></i></a>
+</div></header><section class="content">
+<div class="stats"><div class="stat"><div class="stat-icon blue"><i class="fa-solid fa-bed"></i></div><div><span>Total Rooms</span><h2>125</h2></div></div><div class="stat"><div class="stat-icon purple"><i class="fa-solid fa-users"></i></div><div><span>Occupied Beds</span><h2>570</h2></div></div><div class="stat"><div class="stat-icon green"><i class="fa-solid fa-check"></i></div><div><span>Available Beds</span><h2>55</h2></div></div><div class="stat"><div class="stat-icon orange"><i class="fa-solid fa-building"></i></div><div><span>Hostels</span><h2>4</h2></div></div></div>
+<div class="card"><div class="card-header"><h2>Room Management</h2><button class="primary" data-demo="Add Room form can be connected to your backend.">+ Add Room</button></div>
+<div class="toolbar"><div class="search"><i class="fa-solid fa-magnifying-glass"></i><input id="roomSearch" placeholder="Search room or hostel..."></div><select><option>All Hostels</option><option>Hostel A</option><option>Hostel B</option></select><select><option>All Status</option><option>Full</option><option>Available</option></select></div>
+<div class="table-wrap"><table id="roomsTable"><thead><tr><th>Room</th><th>Hostel</th><th>Capacity</th><th>Occupied</th><th>Available</th><th>Status</th><th>Action</th></tr></thead><tbody>
+<tr><td>B-204</td><td>Boys Hostel - B</td><td>4</td><td>4</td><td>0</td><td><span class="status progress">Full</span></td><td><button class="action-btn" data-demo="Room B-204 opened.">View</button></td></tr>
+<tr><td>A-103</td><td>Boys Hostel - A</td><td>4</td><td>3</td><td>1</td><td><span class="status approved">Available</span></td><td><button class="action-btn" data-demo="Room A-103 opened.">View</button></td></tr>
+<tr><td>B-118</td><td>Boys Hostel - B</td><td>4</td><td>2</td><td>2</td><td><span class="status approved">Available</span></td><td><button class="action-btn" data-demo="Room B-118 opened.">View</button></td></tr>
+</tbody></table></div></div>
+</section></main></div><script src="admin.js"></script></body></html>

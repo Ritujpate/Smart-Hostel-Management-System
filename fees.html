@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Complaints - SHMS</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <i class="fa-solid fa-bed"></i>
+            <span>SHMS</span>
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="dashboard.html" class="menu-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="profile.html" class="menu-item">
+                <i class="fa-solid fa-user"></i>
+                <span>My Profile</span>
+            </a>
+
+            <a href="room.html" class="menu-item">
+                <i class="fa-solid fa-door-open"></i>
+                <span>Room Details</span>
+            </a>
+
+            <a href="leave.html" class="menu-item">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Leave Request</span>
+            </a>
+
+            <a href="complaints.html" class="menu-item active">
+                <i class="fa-solid fa-wrench"></i>
+                <span>Complaints</span>
+            </a>
+
+            <a href="fees.html" class="menu-item">
+                <i class="fa-solid fa-wallet"></i>
+                <span>Fee Details</span>
+            </a>
+
+            <a href="mess.html" class="menu-item">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Mess Menu</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="settings.html" class="menu-item">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+            <a href="index.html" class="menu-item">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="top-header">
+
+            <h1>Complaints</h1>
+
+            <div class="header-right">
+
+                <div class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                    <span></span>
+                </div>
+
+                <div class="student-profile">
+                    <div class="profile-image">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="profile-text">
+                        <strong>Rituj Kumar</strong>
+                        <small>Student</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="content">
+
+            <div class="page-heading">
+
+                <h2>Report a Problem</h2>
+
+                <p>
+                    Submit a complaint related to your hostel facilities.
+                </p>
+
+            </div>
+
+
+            <div class="form-card">
+
+                <form id="complaintForm">
+
+                    <div class="form-group">
+
+                        <label>Complaint Category</label>
+
+                        <select required>
+
+                            <option value="">
+                                Select category
+                            </option>
+
+                            <option>Electrical</option>
+                            <option>Plumbing</option>
+                            <option>Room Maintenance</option>
+                            <option>Furniture</option>
+                            <option>Cleaning</option>
+                            <option>Wi-Fi</option>
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Complaint Title</label>
+
+                        <input
+                            type="text"
+                            placeholder="Example: Fan not working"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Description</label>
+
+                        <textarea
+                            rows="5"
+                            placeholder="Describe your problem..."
+                            required>
+                        </textarea>
+
+                    </div>
+
+
+                    <button class="primary-btn" type="submit">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                        Submit Complaint
+
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <div class="page-card">
+
+                <div class="section-title">
+                    <h2>My Complaints</h2>
+                </div>
+
+                <div class="table">
+
+                    <div class="table-row table-head">
+                        <span>Complaint</span>
+                        <span>Category</span>
+                        <span>Date</span>
+                        <span>Status</span>
+                    </div>
+
+                    <div class="table-row">
+                        <span>Fan not working</span>
+                        <span>Electrical</span>
+                        <span>20 Nov 2026</span>
+                        <span class="status progress">
+                            In Progress
+                        </span>
+                    </div>
+
+                    <div class="table-row">
+                        <span>Water tap leakage</span>
+                        <span>Plumbing</span>
+                        <span>18 Nov 2026</span>
+                        <span class="status pending">
+                            Pending
+                        </span>
+                    </div>
+
+                    <div class="table-row">
+                        <span>Room cleaning</span>
+                        <span>Cleaning</span>
+                        <span>12 Nov 2026</span>
+                        <span class="status approved">
+                            Resolved
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script>
+
+document.getElementById("complaintForm")
+.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    alert("Complaint submitted successfully!");
+
+    this.reset();
+
+});
+
+</script>
+
+</body>
+</html>

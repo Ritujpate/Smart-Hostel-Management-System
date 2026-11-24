@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Warden Dashboard - SHMS</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="warden.css">
+</head><body>
+<div class="warden-layout">
+<aside class="sidebar">
+ <div class="logo"><i class="fa-solid fa-bed"></i><span>SHMS</span></div>
+ <nav class="menu">
+  <a class="menu-item active" href="warden-dashboard.html"><i class="fa-solid fa-house"></i>Dashboard</a>
+  <a class="menu-item" href="warden-students.html"><i class="fa-solid fa-users"></i>Students</a>
+  <a class="menu-item" href="warden-complaints.html"><i class="fa-solid fa-wrench"></i>Complaints</a>
+  <a class="menu-item" href="warden-leave.html"><i class="fa-solid fa-calendar-check"></i>Leave Requests</a>
+  <a class="menu-item" href="warden-visitors.html"><i class="fa-solid fa-id-card"></i>Visitors</a>
+  <a class="menu-item" href="warden-notices.html"><i class="fa-solid fa-bullhorn"></i>Notices</a>
+ </nav>
+ <div class="sidebar-bottom">
+  <a class="menu-item" href="warden-settings.html"><i class="fa-solid fa-gear"></i>Settings</a>
+  <a class="menu-item logout" href="index.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+ </div>
+</aside>
+<main class="main">
+<header class="topbar">
+ <h1>Warden Dashboard</h1>
+ <div class="top-actions"><a class="bell" href="warden-notices.html"><i class="fa-regular fa-bell"></i><span></span></a>
+ <a class="profile" href="warden-settings.html"><div class="avatar"><i class="fa-solid fa-user"></i></div><div class="profile-text"><strong>Warden</strong><small>Administrator</small></div><i class="fa-solid fa-chevron-down"></i></a></div>
+</header>
+<section class="content">
+ <div class="stats">
+  <a class="stat" href="warden-students.html"><div class="stat-icon blue"><i class="fa-solid fa-users"></i></div><div><span>Total Students</span><h2>482</h2></div></a>
+  <a class="stat" href="warden-complaints.html"><div class="stat-icon red"><i class="fa-solid fa-triangle-exclamation"></i></div><div><span>Pending Complaints</span><h2>18</h2></div></a>
+  <a class="stat" href="warden-leave.html"><div class="stat-icon purple"><i class="fa-solid fa-calendar-days"></i></div><div><span>Pending Leave</span><h2>6</h2></div></a>
+ </div>
+ <div class="card">
+  <div class="card-header"><h2>Recent Complaints</h2><a href="warden-complaints.html">See All</a></div>
+  <div class="table-wrap"><table><thead><tr><th>#</th><th>Room</th><th>Issue</th><th>Priority</th><th>Status</th></tr></thead>
+  <tbody>
+   <tr><td>C102</td><td>B-204</td><td>Fan not working</td><td class="priority high">High</td><td><span class="status progress">In Progress</span></td></tr>
+   <tr><td>C101</td><td>A-103</td><td>Water leakage</td><td class="priority high">High</td><td><span class="status pending">Pending</span></td></tr>
+   <tr><td>C099</td><td>B-118</td><td>Light not working</td><td class="priority medium">Medium</td><td><span class="status pending">Pending</span></td></tr>
+  </tbody></table></div>
+ </div>
+ <div class="grid-2">
+  <div class="card"><div class="card-header"><h2>Recent Leave Requests</h2><a href="warden-leave.html">View All</a></div>
+   <div class="notice-list">
+    <div class="notice"><div class="notice-icon"><i class="fa-solid fa-calendar-check"></i></div><div><h3>Rituj Kumar</h3><p>25 Nov - 28 Nov • Home visit</p><span class="status pending">Pending</span></div></div>
+    <div class="notice"><div class="notice-icon"><i class="fa-solid fa-calendar-check"></i></div><div><h3>Arjun Singh</h3><p>26 Nov - 27 Nov • Family function</p><span class="status approved">Approved</span></div></div>
+   </div>
+  </div>
+  <div class="card"><div class="card-header"><h2>Latest Notices</h2><a href="warden-notices.html">View All</a></div>
+   <div class="notice-list">
+    <div class="notice"><div class="notice-icon"><i class="fa-solid fa-bullhorn"></i></div><div><h3>Hostel Inspection</h3><p>24 Nov, 10:00 AM</p></div></div>
+    <div class="notice"><div class="notice-icon"><i class="fa-solid fa-utensils"></i></div><div><h3>Mess Timing Updated</h3><p>Effective from 25 Nov</p></div></div>
+   </div>
+  </div>
+ </div>
+</section>
+</main></div>
+<script src="warden.js"></script></body></html>
